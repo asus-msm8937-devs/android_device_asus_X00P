@@ -26,5 +26,8 @@ TARGET_SCREEN_DENSITY := 380
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_X00P
 TARGET_RECOVERY_DEVICE_MODULES := libinit_X00P
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Inherit the proprietary files
 -include vendor/asus/X00P/BoardConfigVendor.mk
