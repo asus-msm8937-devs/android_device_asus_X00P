@@ -9,5 +9,9 @@ DEVICE_PATH := device/asus/X00P
 # Inherit proprietary files
 $(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
 # Inherit from msm8937-common
 $(call inherit-product, device/asus/msm8937-common/msm8937.mk)
