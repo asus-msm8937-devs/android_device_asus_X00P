@@ -13,6 +13,10 @@ $(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.device.rc \
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
