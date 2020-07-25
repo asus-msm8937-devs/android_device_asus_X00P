@@ -12,5 +12,10 @@ DEVICE_PATH := device/asus/X00P
 # Kernel
 TARGET_KERNEL_CONFIG := X00P_defconfig
 
+# Partitions
+BOARD_VENDORIMAGE_PARTITION_SIZE   := 681574400
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
+
 # Inherit the proprietary files
 -include vendor/asus/X00P/BoardConfigVendor.mk
