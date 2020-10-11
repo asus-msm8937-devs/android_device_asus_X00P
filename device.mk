@@ -21,6 +21,10 @@ TARGET_SCREEN_WIDTH := 720
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Crypto
+EXTRA_VENDOR_LIBRARIES += \
+    libcrypto
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
