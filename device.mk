@@ -9,6 +9,14 @@ DEVICE_PATH := device/asus/X00P
 # Inherit proprietary files
 $(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1440
+TARGET_SCREEN_WIDTH := 720
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
