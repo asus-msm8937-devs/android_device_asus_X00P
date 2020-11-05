@@ -17,5 +17,8 @@ BOARD_VENDORIMAGE_PARTITION_SIZE   := 681574400
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
+
 # Inherit the proprietary files
 -include vendor/asus/X00P/BoardConfigVendor.mk
