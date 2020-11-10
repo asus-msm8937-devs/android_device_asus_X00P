@@ -37,3 +37,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+for blob in libarcsoft_nighthawk.so libarcsoft_piczoom.so libarcsoft_videostab.so libarcsoft_night_shot.so; do
+    patchelf --remove-needed "libandroid.so" "$DEVICE_BLOB_ROOT/vendor/lib/$blob"
+done
