@@ -13,6 +13,7 @@ DEVICE_PATH := device/asus/X00P
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Kernel
+TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := X00P_defconfig
 
 # Light
