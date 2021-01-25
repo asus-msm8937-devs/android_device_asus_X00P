@@ -9,6 +9,9 @@
 
 DEVICE_PATH := device/asus/X00P
 
+# Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Kernel
 TARGET_KERNEL_CONFIG := X00P_defconfig
 
