@@ -17,6 +17,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Soong Namespace
+PRODUCT_SOONG_NAMESPACES += \
+    device/asus/X00P
+
 # Screen density
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
