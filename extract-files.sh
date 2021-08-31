@@ -6,6 +6,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/libarcsoft_nighthawk.so \
+        |vendor/lib/libarcsoft_piczoom.so \
+        |vendor/lib/libarcsoft_videostab.so \
+        |vendor/lib/libarcsoft_night_shot.so)
+            "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+            ;;
+    esac
+}
+
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then

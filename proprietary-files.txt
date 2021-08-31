@@ -154,11 +154,11 @@ vendor/lib/libactuator_rohm_bu64243gwz.so
 # Camera-arcsoft
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_hdr.so
-vendor/lib/libarcsoft_nighthawk.so
-vendor/lib/libarcsoft_night_shot.so
+vendor/lib/libarcsoft_night_shot.so|247c49e22332065b848ee2db15223350fe25fca5
+vendor/lib/libarcsoft_nighthawk.so|f778baa001c19c214fdc362b45d7b4f71ad88770
 vendor/lib/libarcsoft_picselfie_algorithm.so
-vendor/lib/libarcsoft_piczoom.so
-vendor/lib/libarcsoft_videostab.so
+vendor/lib/libarcsoft_piczoom.so|10e8ef23a8b0d77a1c398e1d83892b6c0da15d7b
+vendor/lib/libarcsoft_videostab.so|eb285a809cbb8b1cbc8cb395413eca696cb9e46a
 
 # Camera-bin
 vendor/bin/mm-qcamera-app
