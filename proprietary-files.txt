@@ -1655,6 +1655,10 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libfprint-x64.so
 vendor/etc/sw_config.xml
 
+# Fingerprint - from UL-ASUS_X00P-WW-16.00.1906.411-user
+vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
+
 # Firmware
 vendor/etc/firmware/fngap64_8917.b00
 vendor/etc/firmware/fngap64_8917.b01
