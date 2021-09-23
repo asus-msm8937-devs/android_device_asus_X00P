@@ -27,7 +27,6 @@
 #define LCD_LED         LEDS "lcd-backlight/"
 #define RED_LED         LEDS "red/"
 #define GREEN_LED       LEDS "green/"
-#define BLUE_LED        LEDS "blue/"
 
 #define BLINK           "blink"
 #define BRIGHTNESS      "brightness"
@@ -138,7 +137,6 @@ static void handleNotification(const LightState& state) {
     /* Disable blinking. */
     set(RED_LED BLINK, 0);
     set(GREEN_LED BLINK, 0);
-    set(BLUE_LED BLINK, 0);
 
     /* Enable blinking */
     if (blink){
@@ -146,17 +144,13 @@ static void handleNotification(const LightState& state) {
             set(RED_LED BLINK, blink);
         if (green)
             set(GREEN_LED BLINK, blink);
-        if (blue)
-            set(BLUE_LED BLINK, blink);
     } else {
-        if (red == 0 && green == 0 && blue == 0) {
+        if (red == 0 && green == 0) {
             set(RED_LED BLINK, 0);
             set(GREEN_LED BLINK, 0);
-            set(BLUE_LED BLINK, 0);
         }
         set(RED_LED BRIGHTNESS, red);
         set(GREEN_LED BRIGHTNESS, green);
-        set(BLUE_LED BRIGHTNESS, blue);
     }
 }
 
