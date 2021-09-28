@@ -26,8 +26,12 @@ PRODUCT_MODEL := ASUS_X00PD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := msm8937_64-user-10-QKQ1.191002.002-17.00.2003.23-20200401-release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_DEVICE=ZB555KL \
+    PRODUCT_NAME=ZB555KL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="msm8937_64-user 10 QKQ1.191002.002 17.00.2003.23-20200401 release-keys"
+    PRIVATE_BUILD_DESC="WW_X00PD-user 8.0.0 OPR1.170623.032 15.00.1801.31 release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := asus/WW_X00PD/ASUS_X00P_2:8.0.0/OPR1.170623.032/15.00.1801.31:user/release-keys

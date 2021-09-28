@@ -11,6 +11,7 @@ DEVICE_PATH := device/asus/X00P
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := X00P,X00PD
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
